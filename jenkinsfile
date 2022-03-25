@@ -8,21 +8,21 @@ pipeline
 		{
 			steps 
 			{
-				sh "dotnet restore"
+				sh "/var/jenkins_home/tools/io.jenkins.plugins.dotnet.DotNetSDK/dotnet6/dotnet/dotnet restore"
 			}
 		}
 		stage('Clean')
 		{
 			steps 
 			{
-				sh "dotnet clean"
+				sh "/var/jenkins_home/tools/io.jenkins.plugins.dotnet.DotNetSDK/dotnet6/dotnet/dotnet clean"
 			}
 		}
 		stage('Build')
 		{
 			steps 
 			{
-				sh "dotnet build"
+				sh "/var/jenkins_home/tools/io.jenkins.plugins.dotnet.DotNetSDK/dotnet6/dotnet build"
 			}
 		}
 		
