@@ -32,7 +32,7 @@ pipeline
 	{
 		failure
 		{
-			mail bcc: '', body: "<b>Error</b><br>Project: {$env.JOB_NAME}</br><br>Build Number: {$env.BUILD_NUMBER}</br><br>Build URL: {$env.BUILD_URL}</br>", cc: '', charset: 'UTF-8', from: '', mimetype: 'text/html', subject: "BUILD FAILED: {env.JOB_NAME}", to: "";
+			mail bcc: '', body: "<b>Error</b><br>Project: {$env.JOB_NAME}</br><br>Build Number: {$env.BUILD_NUMBER}</br><br>Build URL: {$env.BUILD_URL}</br>", cc: '', charset: 'UTF-8', from: '', mimeType: 'text/html', subject: "BUILD FAILED: {env.JOB_NAME}", to: "";
 		}
 	}
 }
